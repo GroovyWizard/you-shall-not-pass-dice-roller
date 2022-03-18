@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:outlineProvider="background"
@@ -10,62 +11,42 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="0dp"
+        android:id="@+id/gandalfImage"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="Background featuring the main characters of Lord of The Rings show"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/_50384"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="24dp"
-        android:contentDescription="Gandalf saying a pun &quot;Thats what im tolkien about&quot; which refers to the name of Lord of The Rings author J R R Tolkien"
-        android:scaleType="centerInside"
+        android:layout_marginBottom="220dp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/the_lord_of_the_rings_gandalf_wizard_sunglasses_puns_j_r_r_tolkien_humor_41430_jpg_d" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/resultView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="#72825E"
-        android:fontFamily="sans-serif-light"
-        android:text="@string/main_message_text"
-        android:textColor="@color/black"
-        android:textSize="24sp"
+        android:layout_marginStart="178dp"
+        android:layout_marginTop="416dp"
+        android:layout_marginEnd="176dp"
+        android:textSize="34sp"
         android:typeface="normal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:background="#72825E"
-        android:fontFamily="sans-serif-light"
-        android:text="@string/bottom_message_text"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="131dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="140dp"
+        android:text="ROLL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
